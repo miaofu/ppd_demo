@@ -3,9 +3,9 @@
 <br>
 ##数据采集
 <br>
-dianping.py  用于获取网贷之家的用户评论数据的示例爬虫代码
+dianping.py  用于获取网贷之家的用户评论数据的示例爬虫代码,样板数据存储在data/dianping.txt
 <br>
-renrendai.py 用于获取其他P2P平台的投标数据的示例爬虫代码
+renrendai.py 用于获取其他P2P平台的投标数据的示例爬虫代码,样板数据存储在data/bid_list.txt
 
 ##数据分析
 <br>
