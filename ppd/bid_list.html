@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://mark.ad.sogou.com/mark/login -->
+<html class=""><!--<![endif]-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>产品demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="./templet/bootstrap.min.css">
+        <link rel="stylesheet" href="./templet/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="./templet/main.css">
+        <link rel="shortcut icon" href="diting.jpg">
+
+    <script src="lib/jquery-3.1.0.min.js"></script>
+<!-- for table-->
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <style rel="stylesheet">
+         .title
+         {
+          font-size:20px;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          font-family: Georgia;
+
+
+         }
+         .subtitle, .notation
+         {font-family: Georgia;}
+         .notation{margin-bottom: 10px;}
+         </style>
+
+</head>
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                   <a class="brand" tabindex="-1" href="index.html">数据产品</a>
+                    <div class="nav-collapse collapse">
+                         <ul class="nav">
+                            <li><a tabindex="-1" href="index.html">首页</a></li>
+                            <li><a tabindex="-1" href="LC.html">LC</a></li>
+                            <li><a tabindex="-1" href="bid_list.html">投标一览</a></li>
+                            <li><a tabindex="-1" href="download_contact.html">联系我们</a></li>
+
+
+                        </ul>
+                        
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div style="width: 1100px;height:10px;"></div>
+
+<div id="part4">
+
+        
+        <div id="P4_news" style="width: 1200px;height:500px;">
+            <div class="title">散标</div>
+            <div class="notation">下面的表格是从人人贷中爬取投标实时投标的信息，更加详细的投标信息都是可以从其html页面解析而来。</div>
+            <table id="Bid_List" class="display" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+                <th>散标ID</th>
+                <th>金额</th>
+                <th>利率</th>
+                <th>期限</th>
+                <th>基本描述</th>
+                <th>信用</th>
+                <th>开始时间</th>
+                <th>完成比例</th>
+                <th>标题</th>
+                <th>状态</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <th>散标ID</th>
+                <th>金额</th>
+                <th>利率</th>
+                <th>期限</th>
+                <th>基本描述</th>
+                <th>信用</th>
+                <th>开始时间</th>
+                <th>完成比例</th>
+                <th>标题</th>
+                <th>状态</th>
+            </tr>
+        </tfoot>
+     </table>
+    </div>
+            
+</div>
+
+<!--
+      <th>行业名称</th>
+                <th>股票代码</th>
+                <th>股票名称</th>
+                <th>原始新闻(上升)</th>
+                <th>原始新闻(下降)</th>
+                <th>train[60%](上升)</th>
+                <th>train[60%](下降)</th>
+                <th>test[40%](上升)</th>
+                <th>test[40%](下降)</th>
+                <th>Test准确率</th>
+    -->
+
+<!--<script type="text/javascript" src="js/P1_viewShareAtt.js"></script> -->
+<!--<script type="text/javascript" src="js/getTable.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#Bid_List').DataTable( {
+        "ajax": "php/bid.php"
+    } );
+} );
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <footer>
+                <p><a target="_blank" href="">&nbsp;</a>© 第二届魔镜杯 产品训练营学习示例</p>
+            </footer>
+
+        </div> <!-- /container -->
+        
+        
+
+
+   
+        
+
+    
+
+</body></html>

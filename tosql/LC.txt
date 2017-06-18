@@ -1,0 +1,10 @@
+
+
+# 将LC下载下来，在sql控制台运行下面sql语句，建立LC表
+
+CREATE TABLE `ppd_demo`.`LC` ( `ListingId` INT NOT NULL , `借款金额` INT NOT NULL , `借款期限` INT NOT NULL , `借款利率` INT NOT NULL , `借款成功日期` DATE NOT NULL , `初始评级` VARCHAR(10) NOT NULL , `借款类型` VARCHAR(10) NOT NULL , `是否首标` VARCHAR(10) NOT NULL , `年龄` INT NOT NULL , `性别` VARCHAR(10) NOT NULL , `手机认证` VARCHAR(50) NOT NULL , `户口认证` VARCHAR(50) NOT NULL , `学历认证` VARCHAR(50) NOT NULL , `征信认证` VARCHAR(50) NOT NULL , `淘宝认证` VARCHAR(50) NOT NULL , `历史成功借款次数` INT NOT NULL , `历史成功借款金额` FLOAT NOT NULL , `总待还本金` FLOAT NOT NULL , `历史正常还款期数` INT NOT NULL , `历史逾期还款期数` INT NOT NULL) ENGINE = InnoDB;
+
+＃ 在命令行 运行下面命令，将LC表导入到ppd_demo 之中，可以修改自己的登陆用户名和密码
+mysqlimport --ignore-lines=1 --fields-terminated-by=, --verbose --local -u root  -p ppd_demo LC.csv
+
+
